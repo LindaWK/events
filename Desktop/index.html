@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- style sheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"></script>
+
+    <title>Tourism in the East Village</title>
+  </head>
+
+  <body>
+    <div class = "container">
+    </br>
+      <h1><a href="index.html">Tourism in the East Village</a></h1>
+    </br>
+  </br>
+      <p>Welcome to The Tourism in the East Village App. Choose a view below to see the events happening today.</p>
+
+      <h2>Events Today:</h2>
+
+      <div class="card" style="width: 75%;">
+        <div class="card-body">
+          <h5 class="card-title">Yelp Elite Event: Panorama</h5>
+          <p class="card-text">
+            From: 12:00pm - 5:00pm,</br>
+            Address : 820 Broadway, New York, NY 10003,</br>
+            Distance : 0.3 miles,</br>
+            Cost: $20.00.</br>
+          </p>
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter1">
+            View Event Details
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Yelp Elite Event: Panorama</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    From: 12:00pm - 5:00pm,</br>
+                    Address : 820 Broadway, New York, NY 10003,</br>
+                    Distance : 0.3 miles,</br>
+                    Cost: $20.00.</br>
+                  </p>
+                  <img src = "event1.png" width = 50% alt = "location on map"/ >
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 75%;">
+        <div class="card-body">
+          <h5 class="card-title">Stomp</h5>
+          <p class="card-text">
+            From: 1:00pm - 8:00pm,</br>
+            Address : 126 2nd Ave, Orpheum Theater, New York, NY 10003,</br>
+            Distance : 0.3 miles,</br>
+            Cost: $20.00.</br>
+          </p>
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2">
+            View Event Details
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Stomp</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    From: 1:00pm - 8:00pm,</br>
+                    Address : 126 2nd Ave, Orpheum Theater, New York, NY 10003,</br>
+                    Distance : 0.3 miles,</br>
+                    Cost: $20.00.</br>
+                  </p>
+                  <img src = "event4.png" width = 50% alt = "location on map"/ >
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 75%;">
+        <div class="card-body">
+          <h5 class="card-title">6BC Botanical Garden</h5>
+          <p class="card-text">
+            From: 12:00pm - 5:00pm,</br>
+            Address : 622 6th St, New York, NY 10009,</br>
+            Distance : 0.8 miles,</br>
+            Cost: Free.</br>
+          </p>
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter3">
+            View Event Details
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">6BC Botanical Garden</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    From: 12:00pm - 5:00pm,</br>
+                    Address : 622 6th St, New York, NY 10009,</br>
+                    Distance : 0.8 miles,</br>
+                    Cost: Free.</br>
+                  </p>
+                  <img src = "event5.png" width = 50% alt = "location on map"/ >
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 75%;">
+        <div class="card-body">
+          <h5 class="card-title">Nuyorican Poets Cafe</h5>
+          <p class="card-text">
+            From: 12:00pm - 2:00am,</br>
+            Address : 236 E 3rd St, New York, NY 10009,</br>
+            Distance : 0.9 miles,</br>
+            Cost: $12.00.</br>
+          </p>
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter4">
+            View Event Details
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Nuyorican Poets Cafe</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    From: 12:00pm - 2:00am,</br>
+                    Address : 236 E 3rd St, New York, NY 10009,</br>
+                    Distance : 0.9 miles,</br>
+                    Cost: $12.00.</br>
+                  </p>
+                  <img src = "event6.png" width = 50% alt = "location on map"/ >
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 75%;">
+        <div class="card-body">
+          <h5 class="card-title">Pyramid Club</h5>
+          <p class="card-text">
+            From: 8:00pm - 4:00am,</br>
+            Address : 101 Ave A,New York, NY 10009,</br>
+            Distance : 0.6 miles,</br>
+            Cost: $8.00.</br>
+          </p>
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter5">
+            View Event Details
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter5" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Pyramid Club</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    From: 8:00pm - 4:00am,</br>
+                    Address : 101 Ave A,New York, NY 10009,</br>
+                    Distance : 0.6 miles,</br>
+                    Cost: $8.00.</br>
+                  </p>
+                  <img src = "event8.png" width = 50% alt = "location on map"/ >
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 75%;">
+        <div class="card-body">
+          <h5 class="card-title">New York Neo-Futurists</h5>
+          <p class="card-text">
+            From: 10:00pm - 11:45pm,</br>
+            Address : 85 E 4th St, Kraine Theater, New York, NY 10003,</br>
+            Distance : 0.3 miles,</br>
+            Cost: $20.00.</br>
+          </p>
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter6">
+            View Event Details
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter6" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">New York Neo-Futurists</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    From: 10:00pm - 11:45pm,</br>
+                    Address : 85 E 4th St, Kraine Theater, New York, NY 10003,</br>
+                    Distance : 0.3 miles,</br>
+                    Cost: $20.00.</br>
+                  </p>
+                  <img src = "event9.png" width = 50% alt = "location on map"/ >
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="width: 75%;">
+        <div class="card-body">
+          <h5 class="card-title">Theatre 80 St Marks</h5>
+          <p class="card-text">
+            From: 7:00pm - 11:45pm,</br>
+            Address : 80 Saint Marks Pl, New York, NY 10003,</br>
+            Distance : 0.4 miles,</br>
+            Cost: $20.00.</br>
+          </p>
+
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter7">
+            View Event Details
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter7" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Theatre 80 St Marks</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    From: 7:00pm - 11:45pm,</br>
+                    Address : 80 Saint Marks Pl, New York, NY 10003,</br>
+                    Distance : 0.4 miles,</br>
+                    Cost: $20.00.</br>
+                  </p>
+                  <img src = "event10.png" width = 50% alt = "location on map"/ >
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
